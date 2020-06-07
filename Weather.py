@@ -1,6 +1,6 @@
 from flask import Flask, request, make_response
 import json
-import pyowm
+# import pyowm
 from flask_cors import CORS, cross_origin
 import requests
 import datetime
@@ -55,7 +55,6 @@ def processRequest(req):
         "fulfillmentText" : speech,
         "response": responseJSON
     }
-
 
 if __name__ == '__main__':
     app.run(debug=True)
