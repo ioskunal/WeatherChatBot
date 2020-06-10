@@ -1,1 +1,1 @@
-web: python Weather.py
+web: gunicorn app:app
